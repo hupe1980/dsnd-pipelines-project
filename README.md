@@ -1,54 +1,68 @@
-# README Template
+# Pipeline Project
 
-Below is a template provided for use when building your README file for students.
-
-# Project Title
-
-Project description goes here.
+This project involves building a machine learning pipeline to predict whether a customer recommends a product based on their review. The dataset includes numerical, categorical, and text features, and the target variable is binary (`Recommended IND`).
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+Follow the instructions below to set up the project and run the pipeline.
+
 
 ### Dependencies
 
-```
-Examples here
-```
+Ensure you have the following installed:
+* Python 3.x
+* [scikit-learn](https://scikit-learn.org/stable/)
+* [pandas](https://pandas.pydata.org/)
+* [spaCy](https://spacy.io/)
+* [Jupyter Notebook](https://jupyter.org/)
 
 ### Installation
 
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
+1. Clone the repository:
 
 ```
-Give an example here
+git clone https://github.com/hupe1980/dsnd-pipelines-project.git
+cd dsnd-pipelines-project
+```
+
+2. Install the required Python packages:
+
+```
+pip install -r requirements.txt
+```
+
+3. Download the SpaCy language model:
+
+```
+python -m spacy download en_core_web_sm
 ```
 
 ## Testing
 
-Explain the steps needed to run any automated tests
+To test the pipeline:
+
+1. Run the cells in the notebook that evaluate the model's performance.
+2. Use the provided test set to check accuracy and other metrics.
 
 ### Break Down Tests
 
-Explain what each test does and why
-
-```
-Examples here
-```
+- **Data Splitting**: Ensures the data is split into training and testing sets.
+- **Pipeline Training**: Verifies that the pipeline processes data correctly and trains the model.
+- **Model Evaluation**: Tests the model's accuracy and other metrics on the test set.
 
 ## Project Instructions
 
-This section should contain all the student deliverables for this project.
+Deliverables for this project include:
+- A complete machine learning pipeline that handles numerical, categorical, and text data.
+- Properly trained and evaluated model with hyperparameter tuning.
+- Documentation of the process and results.
 
 ## Built With
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
+* [scikit-learn](https://scikit-learn.org/) - Machine learning library
+* [pandas](https://pandas.pydata.org/) - Data manipulation and analysis
+* [SpaCy](https://spacy.io/) - Natural language processing
+* [numpy](https://numpy.org/) - Numerical computations
 
 ## License
 
